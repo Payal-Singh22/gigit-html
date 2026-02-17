@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gigit – Get anything done</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#191BDF",
+              accent: "#FE6807",
+              dark: "#060733",
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(0, 0, 0, 0.08)",
+            },
+            borderRadius: {
+              pill: "9999px",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+
+  </head>
+
+  <body class="bg-white text-slate-900 antialiased font-[Poppins]">
+    <!-- Page wrapper -->
+    <div class="min-h-screen bg-white">
+      <!-- NAVBAR + HERO SECTION -->
+      <header class="bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Top navigation -->
+          <nav class="flex items-center justify-between py-5">
+            <a href="#" class="flex items-center gap-2">
+              <img
+                src="assets/logo.png"
+                alt="Gigit logo"
+                class="h-12 w-auto rounded-full bg-white/10 p-1"
+              />
+             
+            </a>
+            <div class="hidden md:flex items-center gap-10 text-[16px] font-medium text-white">
+              <a href="#how-it-works"
+                 class="relative transition font-[Poppins] duration-300 hover:text-[#FF7A00]">
+                Services
+              </a>
+            
+              <a href="#why-gigit"
+                 class="relative transition font-[Poppins] duration-300 hover:text-[#FF7A00]">
+                Who we are
+              </a>
+            
+              <a href="#become-hero"
+                 class="relative font-[Poppins] transition duration-300 hover:text-[#FF7A00]">
+                Become a Hero
+              </a>
+            </div>
+            <div class="flex items-center">
+              <button
+                class="inline-flex items-center justify-center rounded-pill bg-accent px-5 py-2 text-xs sm:text-sm font-[Poppins] font-semibold tracking-wide text-white shadow-soft hover:bg-[#ff7f2e] transition"
+              >
+                TH / EN
+              </button>
+            </div>
+          </nav>
+
+         <!-- HERO SECTION -->
+         <section id="hero" 
+         class="bg-primary text-white pt-16 pb-40 relative overflow-hidden">
+         
+           <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="grid lg:grid-cols-2 gap-12 items-center">
+         
+               <!-- LEFT -->
+               <div>
+                 <div class="inline-flex items-center rounded-full bg-[#FE6807] px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                   SERVICES
+                 </div>
+         
+                 <h1 class="mt-6 font-extrabold 
+                            text-[40px] sm:text-[52px] lg:text-[60px]
+                            leading-[48px] sm:leading-[60px] lg:leading-[72px]">
+                   Discover what<br>
+                   you can get done<br>
+                   with gigit
+                 </h1>
+         
+                 <p class="mt-6 text-[20px] leading-[30px] font-medium text-white/90">
+                   View our full range of services.
+                 </p>
+               </div>
+         
+               <!-- RIGHT -->
+               <div class="relative flex justify-center lg:justify-end">
+                 <img
+                   src="assets/serviceloc.png"
+                   alt="Office workspace"
+                   class="relative z-10 rounded-[20px] w-full max-w-[520px]"
+                 />
+               </div>
+         
+             </div>
+           </div>
+         
+           <!-- 🔥 WAVE INSIDE HERO -->
+           <div class="absolute bottom-0 left-0 w-full">
+             <img src="assets/BGWave.png" alt="Wave" class="w-full">
+           </div>
+         
+         </section>
+
+
+
+        </div>
+
+       
+
+        
+      </header>
+
+      <!-- HOW IT WORKS (WHITE) -->
+      <main>
+        
+
+
+        <!-- POPULAR SERVICES (WHITE) -->
+        <section
+          id="popular-services"
+          class="bg-white py-16 sm:py-20 lg:py-24"
+        >
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <!-- Badge: IN DEMAND SERVICES -->
+              <div
+                class="inline-flex items-center justify-center rounded-full bg-[#FE6807] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-white"
+              >
+                IN DEMAND SERVICES
+              </div>
+
+              <!-- Title -->
+              <h2
+                class="mt-4 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#2A3342]"
+              >
+                Popular Services
+              </h2>
+
+              <!-- Subtitle -->
+              <p class="mt-3 text-sm sm:text-base text-[#556987] max-w-3xl mx-auto">
+                Browse through our most popular categories and find the perfect person for your task
+              </p>
+            </div>
+
+            <!-- Service cards grid: 2 rows x 4 cols - card = image only, text outside -->
+            <div
+              class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6"
+            >
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.0);"
+                >
+                  <img
+                    src="assets/service1.png"
+                    alt="Cleaning"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Cleaning
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.0);"
+                >
+                  <img
+                    src="assets/service2.png"
+                    alt="Handyman"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Handyman
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.25);"
+                >
+                  <img
+                    src="assets/service3.png"
+                    alt="Massage"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Massage
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.25);"
+                >
+                  <img
+                    src="assets/service4.png"
+                    alt="Laundry"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Laundry
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.25);"
+                >
+                  <img
+                    src="assets/service5.png"
+                    alt="Air Conditioner Cleaning"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Air Conditioner Cleaning
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.25);"
+                >
+                  <img
+                    src="assets/service6.png"
+                    alt="Air Conditioner Technician"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Air Conditioner Technician
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.25);"
+                >
+                  <img
+                    src="assets/service7.png"
+                    alt="Plumbing"
+                    class="block h-full w-full min-h-full min-w-full object-cover"
+                    style="object-position: 50% 35%;"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Plumbing
+                </p>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <div
+                  class="w-full aspect-[261/174] rounded-[7px] overflow-hidden"
+                  style="box-shadow: 0 4px 4px rgba(0,0,0,0.25);"
+                >
+                  <img
+                    src="assets/service8.png"
+                    alt="Tutoring"
+                    class="block h-full w-full min-h-full min-w-full object-cover object-center"
+                  />
+                </div>
+                <p class="mt-3 text-center text-sm font-medium text-[#333F51]">
+                  Tutoring
+                </p>
+              </div>
+            </div>
+
+           
+           
+          </div>
+           
+
+          <!-- ALL SERVICES SECTION -->
+<section class="bg-white pb-20">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- All Services Heading -->
+    <h3 class="mt-16 font-[Poppins] font-medium text-[30px] leading-[38px] text-[#2A3342]">
+      All Services
+    </h3>
+
+    <!-- Divider -->
+    <div class="mt-4 h-[1px] w-full bg-[#D9D9D9]"></div>
+
+    <!-- Services Grid -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4">
+
+      <!-- Column 1 -->
+      <div class="space-y-4">
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 1</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 4</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 7</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 10</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 13</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 16</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 19</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 22</p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="space-y-4">
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 2</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 5</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 8</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 11</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 14</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 17</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 20</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 23</p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="space-y-4">
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 3</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 6</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 9</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 12</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 15</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 18</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 21</p>
+        <p class="font-[Poppins] font-medium text-[20px] leading-[30px] text-[#556987]">Service 24</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      
+
+        
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="bg-[#191BDF] text-white pt-14 pb-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-8 pb-8">
+      
+            <!-- Column 1 (5 cols) -->
+            <div class="lg:col-span-3">
+              <div class="flex items-center gap-2">
+                <img
+                  src="assets/logo.png"
+                  alt="Gigit logo"
+                  class="h-8 w-auto object-contain"
+                />
+              </div>
+              <p class="mt-3 max-w-[217px] text-[18px] leading-[28px] text-white">
+                Get anything done,<br>
+                right when you need it.
+              </p>
+            </div>
+      
+            <!-- Column 2 (3 cols) -->
+            <div class="lg:col-span-3">
+              <h3 class="text-[16px] font-semibold text-white">
+                About us
+              </h3>
+              <ul class="mt-4 space-y-3 text-[16px] leading-6 font-medium text-white/90">
+                <li><a href="#" class="hover:text-white">Who we are</a></li>
+                <li><a href="#" class="hover:text-white">Contact us</a></li>
+                <li><a href="#" class="hover:text-white">Become a gigit hero</a></li>
+                <li><a href="#" class="hover:text-white">Sitemap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 3 (3 cols) -->
+            <div class="lg:col-span-3">
+              <h3 class="text-sm font-bold text-white">
+                Policies
+              </h3>
+              <ul class="mt-4 space-y-3 text-[16px] leading-6 font-medium text-white/90">
+                <li><a href="#" class="hover:text-white">Terms &amp; Conditions</a></li>
+                <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white">Cancellation Policy</a></li>
+                <li><a href="#" class="hover:text-white">Community Guidelines</a></li>
+                <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 4 (5 cols) -->
+            <div class="lg:col-span-3 w-fit flex flex-col justify-betweenBG Wave.png">
+              <div class="flex flex-col gap-3">
+      
+                <!-- Google Play -->
+                <a href="#">
+                  <img
+                    src="assets/Google Play.png"
+                    class="h-[46px] w-[156px]"
+                  />
+                </a>
+      
+                <!-- App Store -->
+                <a href="#">
+                  <img
+                    src="assets/App Store.png"
+                    class="h-[46px] w-[156px]"
+                  />
+                </a>
+      
+              </div>
+      
+              <!-- Social Icons -->
+              <div class="mt-10 flex items-center gap-4 text-white text-[18px]">
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Bottom -->
+          <div class="pt-6 text-center">
+            <p class="font-[Poppins] text-[14px] leading-[20px] font-medium text-white">© 2028 gigit. All rights reserved.</p>
+          </div>
+      
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

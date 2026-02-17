@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gigit – Get anything done</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#191BDF",
+              accent: "#FE6807",
+              dark: "#060733",
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(0, 0, 0, 0.08)",
+            },
+            borderRadius: {
+              pill: "9999px",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+
+  </head>
+
+  <body class="bg-white text-slate-900 antialiased font-[Poppins]">
+    <!-- Page wrapper -->
+    <div class="min-h-screen bg-white">
+      <!-- NAVBAR + HERO SECTION -->
+      <header class="bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Top navigation -->
+          <nav class="flex items-center justify-between py-5">
+            <a href="#" class="flex items-center gap-2">
+              <img
+                src="assets/logo.png"
+                alt="Gigit logo"
+                class="h-12 w-auto rounded-full bg-white/10 p-1"
+              />
+             
+            </a>
+            <div class="hidden md:flex items-center gap-10 text-[16px] font-medium text-white">
+              <a href="#how-it-works"
+                 class="relative transition font-[Poppins] duration-300 hover:text-[#FF7A00]">
+                Services
+              </a>
+            
+              <a href="#why-gigit"
+                 class="relative transition font-[Poppins] duration-300 hover:text-[#FF7A00]">
+                Who we are
+              </a>
+            
+              <a href="#become-hero"
+                 class="relative font-[Poppins] transition duration-300 hover:text-[#FF7A00]">
+                Become a Hero
+              </a>
+            </div>
+            <div class="flex items-center">
+              <button
+                class="inline-flex items-center justify-center rounded-pill bg-accent px-5 py-2 text-xs sm:text-sm font-[Poppins] font-semibold tracking-wide text-white shadow-soft hover:bg-[#ff7f2e] transition"
+              >
+                TH / EN
+              </button>
+            </div>
+          </nav>
+
+          <!-- HERO CONTENT -->
+          <!-- HERO SECTION -->
+<section id="hero" class="bg-primary text-white relative overflow-hidden pt-20 pb-32">
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid lg:grid-cols-2 items-center gap-16">
+
+      <!-- LEFT CONTENT -->
+      <div class="text-white max-w-[540px]">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center 
+                    bg-[#FE6807] 
+                    text-white 
+                    text-[12px] 
+                    font-medium 
+                    uppercase 
+                    px-3 py-[4px] 
+                    rounded-full">
+          WELCOME
+        </div>
+      
+        <!-- Heading -->
+        <h1 class="mt-6 
+                   font-[Poppins] 
+                   font-extrabold 
+                   text-[44px] sm:text-[52px] lg:text-[60px] 
+                   leading-[52px] sm:leading-[60px] lg:leading-[72px] 
+                   tracking-[-0.02em]">
+          Looking for a {job title} <br>
+          near you?
+        </h1>
+      
+        <!-- Subtext -->
+        <p class="mt-6 
+                  text-[20px] 
+                  leading-[30px] 
+                  font-medium 
+                  text-white/90">
+          Describe your task, budget & timeline to receive 
+          FREE quotes from a local {job title} near you
+        </p>
+      
+        <!-- Keywords List -->
+        <div class="mt-8 space-y-4">
+      
+          <div class="flex items-center gap-3">
+            <img src="assets/icons/Checkbox.png" class="w-7 h-7" alt="">
+            <span class="text-[20px] leading-[30px] font-medium">
+              {Admin keyword 1}
+            </span>
+          </div>
+      
+          <div class="flex items-center gap-3">
+            <img src="assets/icons/Checkbox.png" class="w-7 h-7" alt="">
+            <span class="text-[20px] leading-[30px] font-medium">
+              {Admin keyword 2}
+            </span>
+          </div>
+      
+          <div class="flex items-center gap-3">
+            <img src="assets/icons/Checkbox.png" class="w-7 h-7" alt="">
+            <span class="text-[20px] leading-[30px] font-medium">
+              {Admin keyword 3}
+            </span>
+          </div>
+      
+          <div class="flex items-center gap-3">
+            <img src="assets/icons/Checkbox.png" class="w-7 h-7" alt="">
+            <span class="text-[20px] leading-[30px] font-medium">
+              {Admin keyword 4}
+            </span>
+          </div>
+      
+        </div>
+      
+      </div>
+
+      <!-- RIGHT IMAGE (ONLY YOUR COMPLETE IMAGE) -->
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="assets/serviceloc.png"
+          alt="Gigit App Preview"
+          class="w-full max-w-[450px]"
+        />
+      </div>
+
+    </div>
+  </div>
+
+ 
+
+</section>
+        </div>
+
+        
+      </header>
+
+      <section>
+        <img src="assets/BGWave.png" alt="BG Wave" class="w-full">
+      </section>
+
+      <main>
+
+<!-- WHY HIRE SECTION -->
+<!-- WHY HIRE SECTION -->
+<section class="relative bg-white py-[100px]">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 class="
+      font-['Poppins']
+      text-[48px]
+      leading-[60px]
+      font-bold
+      tracking-[-0.02em]
+      text-[#2A3342]
+      max-w-[846px]
+      mx-auto
+    ">
+      Why hire a {job title} through gigit?
+    </h2>
+
+    <!-- Features Row -->
+    <div class="mt-[60px] grid grid-cols-1 md:grid-cols-3 gap-24 items-start">
+
+      <!-- ITEM 1 -->
+      <div class="flex flex-col items-center">
+
+        <!-- Icon Box -->
+        <div class="w-[64px] h-[64px] bg-[#FE6807] rounded-[6px] flex items-center justify-center">
+          <img 
+            src="assets/icons/4.png" 
+            class="w-[32px] h-[32px] object-contain" 
+            alt="Set budget icon"
+          >
+        </div>
+
+        <!-- Title -->
+        <h3 class="
+          mt-[24px]
+          font-['Poppins']
+          text-[24px]
+          leading-[32px]
+          font-bold
+          text-[#2A3342]
+        ">
+          Set your own budget
+        </h3>
+
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="flex flex-col items-center">
+
+        <div class="w-[64px] h-[64px] bg-[#FE6807] rounded-[6px] flex items-center justify-center">
+          <img 
+            src="assets/icons/2.png" 
+            class="w-[32px] h-[32px] object-contain" 
+            alt="Escrow icon"
+          >
+        </div>
+
+        <h3 class="
+          mt-[24px]
+          font-['Poppins']
+          text-[24px]
+          leading-[32px]
+          font-bold
+          text-[#2A3342]
+        ">
+          Escrow payments
+        </h3>
+
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="flex flex-col items-center">
+
+        <div class="w-[64px] h-[64px] bg-[#FE6807] rounded-[6px] flex items-center justify-center">
+          <img 
+            src="assets/icons/5.png" 
+            class="w-[32px] h-[32px] object-contain" 
+            alt="Verified icon"
+          >
+        </div>
+
+        <h3 class="
+          mt-[24px]
+          font-['Poppins']
+          text-[24px]
+          leading-[32px]
+          font-bold
+          text-[#2A3342]
+        ">
+          Verified pros
+        </h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TOP RATED SECTION -->
+<section class="relative overflow-hidden">
+
+  <!-- TOP CURVE IMAGE -->
+  <img src="assets/BG Wave.png" alt="" class="w-full block" />
+
+  <!-- BLUE SECTION -->
+  <div class="bg-[#191BDF] text-white pt-[80px] pb-[120px]">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Badge -->
+      <div class="inline-flex items-center 
+                  bg-[#FE6807] 
+                  text-white
+                  text-[12px] 
+                  leading-[18px]
+                  font-medium
+                  uppercase
+                  rounded-full
+                  px-[8px]
+                  py-[2px]">
+        OUR PROFESSIONALS
+      </div>
+
+      <!-- Heading -->
+      <h2 class="mt-[20px]
+                 font-['Poppins']
+                 text-[48px]
+                 leading-[60px]
+                 font-bold
+                 tracking-[-0.02em]
+                 text-white
+                 max-w-[837px]">
+        Top-rated {job title} on gigit
+      </h2>
+
+      <!-- CARDS -->
+      <div class="mt-[60px] grid grid-cols-1 md:grid-cols-3 gap-[40px]">
+
+        <!-- CARD 1 -->
+        <div class="text-left">
+          <img src="assets/icons/image3.jpg"
+               class="w-full h-[384px] object-cover"
+               alt="Professional">
+
+          <h3 class="mt-[20px]
+                     text-[30px]
+                     leading-[38px]
+                     font-semibold
+                     text-white">
+            {AI Generated Name}
+          </h3>
+
+          <p class="mt-[8px]
+                    text-[18px]
+                    leading-[28px]
+                    font-medium
+                    text-white/90">
+            {job title}
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="text-left">
+          <img src="assets/icons/image2.jpg"
+               class="w-full h-[384px] object-cover"
+               alt="Professional">
+
+          <h3 class="mt-[20px]
+                     text-[30px]
+                     leading-[38px]
+                     font-semibold
+                     text-white">
+            {AI Generated Name}
+          </h3>
+
+          <p class="mt-[8px]
+                    text-[18px]
+                    leading-[28px]
+                    font-medium
+                    text-white/90">
+            {job title}
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="text-left">
+          <img src="assets/icons/image1.jpg"
+               class="w-full h-[384px] object-cover"
+               alt="Professional">
+
+          <h3 class="mt-[20px]
+                     text-[30px]
+                     leading-[38px]
+                     font-semibold
+                     text-white">
+            {AI Generated Name}
+          </h3>
+
+          <p class="mt-[8px]
+                    text-[18px]
+                    leading-[28px]
+                    font-medium
+                    text-white/90">
+            {job title}
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BOTTOM CURVE IMAGE -->
+  <img src="assets/BGWave.png" alt="" class="w-full block" />
+
+</section>
+
+<!-- RECENT REVIEWS SECTION -->
+<!-- RECENT REVIEWS SECTION -->
+<section class="relative overflow-hidden bg-white">
+
+  <div class="pt-[80px] pb-[140px]">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- BADGE -->
+      <div class="inline-flex items-center
+                  bg-[#FE6807]
+                  text-white
+                  text-[12px]
+                  leading-[18px]
+                  font-medium
+                  uppercase
+                  rounded-full
+                  px-[8px]
+                  py-[2px]">
+        REVIEWS
+      </div>
+
+      <!-- HEADING -->
+      <h2 class="mt-[20px]
+                 font-['Poppins']
+                 text-[48px]
+                 leading-[60px]
+                 font-bold
+                 tracking-[-0.02em]
+                 text-[#2A3342]
+                 max-w-[977px]">
+        Recent {service name} reviews
+      </h2>
+
+      <!-- CARDS WRAPPER -->
+      <div class="mt-[60px] flex gap-[40px]">
+
+        <!-- CARD -->
+        <div class="w-[359px] h-[404px]
+                    bg-[#F7F8F9]
+                    rounded-[6px]
+                    shadow-sm
+                    p-[32px]
+                    flex flex-col justify-between">
+
+          <!-- TOP CONTENT -->
+          <div>
+            <!-- STARS -->
+            <div class="flex gap-[4px] text-[#FFC107] text-[18px]">
+              ★★★★★
+            </div>
+
+            <!-- REVIEW -->
+            <p class="mt-[24px]
+                      text-[18px]
+                      leading-[28px]
+                      font-medium
+                      text-[#556987]">
+              {AI Generated Review}
+            </p>
+          </div>
+
+          <!-- USER -->
+          <div class="flex items-center gap-[12px]">
+            <img src="assets/testimonial.png"
+                 class="w-[48px] h-[48px] rounded-full object-cover"
+                 alt="User">
+
+            <span class="text-[18px]
+                         leading-[28px]
+                         font-medium
+                         text-[#333F51]">
+              {AI Generated Name}
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Duplicate same card 2 & 3 -->
+        
+        <div class="w-[359px] h-[404px]
+                    bg-[#F7F8F9]
+                    rounded-[6px]
+                    shadow-sm
+                    p-[32px]
+                    flex flex-col justify-between">
+          <div>
+            <div class="flex gap-[4px] text-[#FFC107] text-[18px]">
+              ★★★★★
+            </div>
+            <p class="mt-[24px]
+                      text-[18px]
+                      leading-[28px]
+                      font-medium
+                      text-[#556987]">
+              {AI Generated Review}
+            </p>
+          </div>
+          <div class="flex items-center gap-[12px]">
+            <img src="assets/testimonial.png"
+                 class="w-[48px] h-[48px] rounded-full object-cover">
+            <span class="text-[18px]
+                         leading-[28px]
+                         font-medium
+                         text-[#333F51]">
+              {AI Generated Name}
+            </span>
+          </div>
+        </div>
+
+        <div class="w-[359px] h-[404px]
+                    bg-[#F7F8F9]
+                    rounded-[6px]
+                    shadow-sm
+                    p-[32px]
+                    flex flex-col justify-between">
+          <div>
+            <div class="flex gap-[4px] text-[#FFC107] text-[18px]">
+              ★★★★★
+            </div>
+            <p class="mt-[24px]
+                      text-[18px]
+                      leading-[28px]
+                      font-medium
+                      text-[#556987]">
+              {AI Generated Review}
+            </p>
+          </div>
+          <div class="flex items-center gap-[12px]">
+            <img src="assets/testimonial.png"
+                 class="w-[48px] h-[48px] rounded-full object-cover">
+            <span class="text-[18px]
+                         leading-[28px]
+                         font-medium
+                         text-[#333F51]">
+              {AI Generated Name}
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- POPULAR CITIES SECTION -->
+<section class="relative overflow-hidden">
+
+  <!-- TOP WAVE -->
+  <img src="assets/BG Wave.png" alt="" class="w-full block" />
+
+  <!-- BLUE SECTION -->
+  <div class="bg-[#191BDF] text-white pt-[88px] pb-[140px]">
+
+    <div class="max-w-[1140px] mx-auto px-6">
+
+      <!-- BADGE -->
+      <div class="inline-flex items-center
+                  bg-[#FE6807]
+                  text-white
+                  text-[12px]
+                  leading-[18px]
+                  font-['Poppins']
+                  font-medium
+                  uppercase
+                  rounded-full
+                  px-[8px]
+                  py-[2px]">
+        OUR LOCATIONS
+      </div>
+
+      <!-- HEADING -->
+      <h2 class="mt-[20px]
+                 font-['Poppins']
+                 text-[48px]
+                 leading-[60px]
+                 font-bold
+                 tracking-[-0.02em]
+                 text-white
+                 max-w-[522px]">
+        Popular Cities
+      </h2>
+
+      <!-- PARAGRAPH -->
+      <p class="mt-[24px]
+                font-['Poppins']
+                text-[20px]
+                leading-[30px]
+                font-medium
+                text-white/90
+                max-w-[1140px]">
+        Gigit connects you with verified {service name} service providers across Thailand’s major cities and growing urban areas. Whether you’re in a city center or surrounding neighborhood, you can post a task and receive offers from nearby professionals ready to help. Our system prioritizes providers close to your location so you can get faster responses and quicker job completion.
+      </p>
+
+      <!-- CITY GRID -->
+      <div class="mt-[80px] grid grid-cols-1 md:grid-cols-3 gap-[40px]">
+
+        <!-- CITY 1 -->
+        <div>
+          <img src="assets/icons/image3.jpg"
+               class="w-[359px] h-[384px] object-cover"
+               alt="Bangkok">
+
+          <h3 class="mt-[36px]
+                     font-['Poppins']
+                     text-[36px]
+                     leading-[44px]
+                     font-semibold
+                     tracking-[-0.02em]
+                     text-white">
+            Bangkok
+          </h3>
+        </div>
+
+        <!-- CITY 2 -->
+        <div>
+          <img src="assets/icons/image2.jpg"
+               class="w-[359px] h-[384px] object-cover"
+               alt="Chiang Mai">
+
+          <h3 class="mt-[36px]
+                     font-['Poppins']
+                     text-[36px]
+                     leading-[44px]
+                     font-semibold
+                     tracking-[-0.02em]
+                     text-white">
+            Chiang Mai
+          </h3>
+        </div>
+
+        <!-- CITY 3 -->
+        <div>
+          <img src="assets/icons/image1.jpg"
+               class="w-[359px] h-[384px] object-cover"
+               alt="Phuket">
+
+          <h3 class="mt-[36px]
+                     font-['Poppins']
+                     text-[36px]
+                     leading-[44px]
+                     font-semibold
+                     tracking-[-0.02em]
+                     text-white">
+            Phuket
+          </h3>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BOTTOM WAVE -->
+  <img src="assets/BGWave.png" alt="" class="w-full block" />
+
+</section>
+
+
+<!-- PRICE GUIDE SECTION -->
+<section class="relative overflow-hidden bg-[#FFFFFF]">
+
+  <!-- TOP WAVE -->
+ 
+
+  <div class="pt-[120px] pb-[140px]">
+
+    <div class="max-w-[1140px] mx-auto px-6 text-center">
+
+      <!-- BADGE -->
+      <div class="inline-flex items-center
+                  bg-[#FE6807]
+                  text-white
+                  text-[12px]
+                  leading-[18px]
+                  font-['Poppins']
+                  font-medium
+                  uppercase
+                  rounded-full
+                  px-[8px]
+                  py-[2px]">
+        COST
+      </div>
+
+      <!-- HEADING -->
+      <h2 class="mt-[20px]
+                 font-['Poppins']
+                 text-[48px]
+                 leading-[60px]
+                 font-bold
+                 tracking-[-0.02em]
+                 text-[#2A3342]">
+        {service name} price guide
+      </h2>
+
+      <!-- PARAGRAPH -->
+      <p class="mt-[24px]
+                max-w-[919px]
+                mx-auto
+                font-['Poppins']
+                text-[20px]
+                leading-[30px]
+                font-medium
+                text-[#556987]">
+        The cost of a {service name} service depends on the size and type of work, but across Thailand the average total job price is around {national average}. Typical price ranges by region are shown below.
+      </p>
+
+      <!-- PRICING TABLE PLACEHOLDER -->
+      <div class="mt-[80px] flex justify-center">
+        <div class="w-[260px] h-[260px]
+                    bg-[#F6A79A]
+                    shadow-lg
+                    flex items-center justify-center
+                    text-center
+                    p-6">
+
+          <span class="text-[14px] text-[#2A3342] font-medium leading-[22px]">
+            Table with pricing guide for small/medium/large jobs across Thailand's 5 biggest provinces for {service}
+          </span>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+</section>
+
+        <!-- WHAT IS GIGIT (BLUE) -->
+        <section class="pt-12">
+          <img src="assets/BG Wave.png" alt="BG Wave" class="w-full">
+        </section>
+        <section
+          id="why-gigit"
+          class="bg-primary text-white py-16 sm:py-20 lg:py-24"
+        >
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              class="grid items-start gap-12 lg:gap-16 lg:grid-cols-2"
+            >
+              <!-- LEFT: Mobile image -->
+              <div class="order-2 lg:order-1 flex justify-start -ml-8 lg:-ml-56">
+                <div class="w-[420px] sm:w-[480px] lg:w-[540px] xl:w-[600px]">
+                  <img
+                    src="assets/Group 1.png"
+                    alt="Gigit mobile app"
+                    class="w-full h-auto object-contain scale-100"
+                  />
+                </div>
+              </div>
+              <!-- RIGHT: Content - top-aligned with image -->
+              <div
+                class="order-1 lg:order-2 flex flex-col items-start text-left"
+              >
+                <!-- Badge -->
+                <div
+                  class="inline-flex items-center rounded-full bg-accent px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white"
+                >
+                  MOBILE APP
+                </div>
+
+                <!-- Heading -->
+                <h2
+                  class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight"
+                >
+                  What is gigit?
+                </h2>
+
+                <!-- Description -->
+                <p
+                  class="mt-5 pt-8 max-w-xl text-base sm:text-lg leading-relaxed text-white/90"
+                >
+                  gigit is a task marketplace and digital community that securely
+                  connects people who need work done, with people who can do the
+                  work. Simple!
+                </p>
+
+                <p class="mt-7 text-base sm:text-lg font-semibold text-white/95">
+                  It’s as easy as…
+                </p>
+
+                <!-- Steps -->
+                <div class="mt-6 space-y-6 w-full">
+                  <!-- Step 1 -->
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent text-base font-semibold text-white"
+                    >
+                      1
+                    </div>
+                    <div>
+                      <h3 class="text-base sm:text-lg font-semibold text-white">
+                        Post any task
+                      </h3>
+                      <p
+                        class="mt-2 text-sm sm:text-base leading-relaxed text-white/80"
+                      >
+                        Describe your task, set your budget and due date and post
+                        to the community.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="flex items-start gap-4 pt-3">
+                    <div
+                      class="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent text-base font-semibold text-white"
+                    >
+                      2
+                    </div>
+                    <div>
+                      <h3 class="text-base sm:text-lg font-semibold text-white">
+                        Review offers
+                      </h3>
+                      <p
+                        class="mt-2 text-sm sm:text-base leading-relaxed text-white/80"
+                      >
+                        Receive offers in minutes from verified profiles with
+                        transparent ratings &amp; reviews.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="flex items-start gap-4 pt-3">
+                    <div
+                      class="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent text-base font-semibold text-white"
+                    >
+                      3
+                    </div>
+                    <div>
+                      <h3 class="text-base sm:text-lg font-semibold text-white">
+                        Release Payment
+                      </h3>
+                      <p
+                        class="mt-2 text-sm sm:text-base leading-relaxed text-white/80"
+                      >
+                        Once you’re happy the job is complete, securely release
+                        payment through our digital escrow payment process.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        </section>
+  <img src="assets/BGWave.png" alt="BG Wave" class="w-full">
+
+        <!-- FEATURES SECTION -->
+<section class="relative overflow-hidden bg-[#FFFFFF]">
+
+  <!-- TOP WAVE -->
+ 
+
+  <div class="pt-[120px] pb-[140px]">
+
+    <div class="max-w-[1140px] mx-auto px-6 text-center">
+
+      <!-- BADGE -->
+      <div class="inline-flex items-center
+                  bg-[#FE6807]
+                  text-white
+                  text-[12px]
+                  leading-[18px]
+                  font-['Poppins']
+                  font-medium
+                  uppercase
+                  rounded-full
+                  px-[8px]
+                  py-[2px]">
+        FEATURES
+      </div>
+
+      <!-- HEADING -->
+      <h2 class="mt-[20px]
+                 font-['Poppins']
+                 text-[48px]
+                 leading-[60px]
+                 font-bold
+                 tracking-[-0.02em]
+                 text-[#2A3342]
+                 max-w-[919px]
+                 mx-auto">
+        What does a {service name} service near me include?
+      </h2>
+
+      <!-- PARAGRAPH -->
+      <p class="mt-[24px]
+                max-w-[919px]
+                mx-auto
+                font-['Poppins']
+                text-[20px]
+                leading-[30px]
+                font-medium
+                text-[#556987]">
+        A professional {service name} service typically covers inspection, preparation, execution, and final quality checks. The exact scope depends on the type of work required, but experienced providers ensure safety, efficiency, and long-lasting results.The exact scope depends on the type of work required, but experienced providers ensure safety, efficiency, and long-lasting results.The exact scope depends on the type of work required, but experienced providers ensure safety, efficiency, and long-lasting results.The exact scope depends on the type of work required, but experienced providers ensure safety, efficiency, and long-lasting results.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+ <img src="assets/BG Wave.png" alt="BG Wave" class="w-full">
+
+<!-- FAQ SECTION -->
+<section class="relative overflow-hidden bg-[#191BDF]">
+
+  
+
+  <div class="pt-[120px] pb-[160px] relative z-10">
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <!-- BADGE -->
+      <div class="inline-flex items-center justify-center
+                  bg-[#FE6807]
+                  text-white
+                  text-[12px]
+                  leading-[18px]
+                  font-['Poppins']
+                  font-medium
+                  uppercase
+                  rounded-full
+                  px-[10px]
+                  py-[2px]">
+        FAQ
+      </div>
+
+      <!-- HEADING -->
+      <h2 class="mt-[24px]
+                 font-['Poppins']
+                 text-[48px]
+                 leading-[60px]
+                 font-bold
+                 tracking-[-0.02em]
+                 text-white">
+        {service name} FAQs
+      </h2>
+
+      <!-- SUBHEADING -->
+      <p class="mt-[20px]
+                max-w-[827px]
+                mx-auto
+                font-['Poppins']
+                text-[20px]
+                leading-[30px]
+                font-medium
+                text-white/90">
+        Find answers to the most common questions about our {service name} service.
+        Our local experts are dedicated to providing seamless, high-quality
+        solutions tailored to your specific needs.
+      </p>
+
+      <!-- FAQ LIST -->
+      <div class="mt-[60px] flex flex-col items-center gap-[24px]">
+
+        <!-- FAQ ITEM -->
+        <div class="w-[750px]
+                    h-[110px]
+                    bg-[#FE6807]
+                    rounded-[6px]
+                    flex items-center justify-between
+                    px-[40px]">
+
+          <span class="font-['Poppins']
+                       text-[20px]
+                       leading-[30px]
+                       font-bold
+                       text-white">
+            What services are included?
+          </span>
+
+          <!-- ICON -->
+           <div class="faq-icon">
+  <img src="assets/icons/arrow.png"
+       alt="arrow icon"
+       class="w-[28px] h-[28px] object-contain">
+</div>
+
+        </div>
+
+        <!-- DUPLICATE ITEMS -->
+        <div class="w-[750px] h-[110px] bg-[#FE6807] rounded-[6px] flex items-center justify-between px-[40px]">
+          <span class="font-['Poppins'] text-[20px] leading-[30px] font-bold text-white">
+            How long does the service take?
+          </span>
+           <div class="faq-icon">
+  <img src="assets/icons/arrow.png"
+       alt="arrow icon"
+       class="w-[28px] h-[28px] object-contain">
+</div>
+        </div>
+
+        <div class="w-[750px] h-[110px] bg-[#FE6807] rounded-[6px] flex items-center justify-between px-[40px]">
+          <span class="font-['Poppins'] text-[20px] leading-[30px] font-bold text-white">
+            Are there additional costs?
+          </span>
+           <div class="faq-icon">
+  <img src="assets/icons/arrow.png"
+       alt="arrow icon"
+       class="w-[28px] h-[28px] object-contain">
+</div>
+        </div>
+
+        <div class="w-[750px] h-[110px] bg-[#FE6807] rounded-[6px] flex items-center justify-between px-[40px]">
+          <span class="font-['Poppins'] text-[20px] leading-[30px] font-bold text-white">
+            Do you offer emergency services?
+          </span>
+           <div class="faq-icon">
+  <img src="assets/icons/arrow.png"
+       alt="arrow icon"
+       class="w-[28px] h-[28px] object-contain">
+</div>
+        </div>
+
+        <div class="w-[750px] h-[110px] bg-[#FE6807] rounded-[6px] flex items-center justify-between px-[40px]">
+          <span class="font-['Poppins'] text-[20px] leading-[30px] font-bold text-white">
+            How can I book the service?
+          </span>
+         <div class="faq-icon">
+  <img src="assets/icons/arrow.png"
+       alt="arrow icon"
+       class="w-[28px] h-[28px] object-contain">
+</div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom Wave -->
+   <img src="assets/BGWave.png" alt="BG Wave" class="w-full">
+
+</section>
+ <!-- Bottom Wave -->
+   <img src="assets/BGWave.png" alt="BG Wave" class="w-full">
+
+
+        
+        <!-- BLOG SECTION (WHITE) -->
+        <section id="blogs" class="bg-white py-12 sm:py-16 lg:py-20">
+          <div class="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header: BLOG tag + main heading -->
+            <div>
+              <div
+                class="inline-flex items-center justify-center rounded-pill bg-[#FE6807] px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white"
+              >
+                BLOG
+              </div>
+              <h2
+                class="mt-6 font-[Poppins] font-bold text-3xl sm:text-4xl lg:text-[48px] leading-[44px] sm:leading-[52px] lg:leading-[60px] tracking-[-0.02em] text-[#1C232D]"
+              >
+                {service name} &amp; related services blogs
+              </h2>
+            </div>
+
+            <!-- Blog cards: 3 columns, 358×272 images, 6px radius, no shadow -->
+            <div
+              class="mt-12 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <article class="flex flex-col bg-white overflow-hidden min-w-0">
+                <div class="w-full h-[200px] sm:h-[240px] lg:h-[272px] overflow-hidden rounded-md">
+                  <img
+                    src="assets/Frame 42.jpg"
+                    alt="Blog post - office interior"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col pt-4">
+                  <p class="text-sm text-slate-500 font-[Poppins] font-normal">
+                    John Doe • 19 Jan 2022
+                  </p>
+                  <h3 class="mt-2 font-[Poppins] font-bold text-lg sm:text-xl lg:text-2xl leading-7 lg:leading-[30px] text-[#333F51] break-words">
+                    A small business is only as good as its tools and it is totally true.
+                  </h3>
+                </div>
+              </article>
+
+              <article class="flex flex-col bg-white overflow-hidden min-w-0">
+                <div class="w-full h-[200px] sm:h-[240px] lg:h-[272px] overflow-hidden rounded-md">
+                  <img
+                    src="assets/Rectangle 19.png"
+                    alt="Blog post"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col pt-4">
+                  <p class="text-sm text-slate-500 font-[Poppins] font-normal">
+                    John Doe • 19 Jan 2022
+                  </p>
+                  <h3 class="mt-2 font-[Poppins] font-bold text-lg sm:text-xl lg:text-2xl leading-7 lg:leading-[30px] text-[#333F51] break-words">
+                    A small business is only as good as its tools and it is totally true.
+                  </h3>
+                </div>
+              </article>
+
+              <article class="flex flex-col bg-white overflow-hidden min-w-0">
+                <div class="w-full h-[200px] sm:h-[240px] lg:h-[272px] overflow-hidden rounded-md">
+                  <img
+                    src="assets/Frame 24.jpg"
+                    alt="Blog post - workspace"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="flex flex-col pt-4">
+                  <p class="text-sm text-slate-500 font-[Poppins] font-normal">
+                    John Doe • 19 Jan 2022
+                  </p>
+                  <h3 class="mt-2 font-[Poppins] font-bold text-lg sm:text-xl lg:text-2xl leading-7 lg:leading-[30px] text-[#333F51] break-words">
+                    A small business is only as good as its tools and it is totally true.
+                  </h3>
+                </div>
+              </article>
+            </div>
+
+            <!-- View All Posts button: orange, rounded-md, px-4 py-2, text-sm/Medium -->
+            <div class="mt-12 flex justify-center">
+              <button
+                class="inline-flex items-center justify-center rounded-md bg-[#FE6807] px-4 py-2 text-sm font-medium text-white font-[Poppins] hover:bg-[#ff7f2e] transition"
+              >
+                View All Posts
+              </button>
+            </div>
+          </div>
+
+         
+        </section>
+
+
+        <!-- RELATED PROJECTS SECTION -->
+          <img src="assets/BG Wave.png" alt="BG Wave" class="w-full">
+<section class="relative bg-[#191BDF] text-white overflow-hidden">
+
+  <div class="max-w-6xl mx-auto px-6 pt-[100px] pb-[120px]">
+
+    <!-- HEADING -->
+    <h2 class="font-['Poppins']
+               text-[36px]
+               leading-[44px]
+               font-bold
+               tracking-[-0.02em]
+               mb-[32px]">
+      Related Projects
+    </h2>
+
+    <!-- FIND SECTION -->
+    <div class="flex items-center justify-between border-b border-white/40 pb-[12px]">
+
+      <h3 class="font-['Poppins']
+                 text-[30px]
+                 leading-[38px]
+                 font-medium">
+        Find {job title} in your city
+      </h3>
+
+     <!-- Arrow Icon -->
+<svg class="w-[20px] h-[20px] opacity-90 transition-transform duration-300"
+     viewBox="0 0 24 24"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 9L12 15L18 9"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+    </div>
+
+    <!-- CITY GRID -->
+    <div class="grid grid-cols-3 gap-y-[20px] gap-x-[60px] mt-[32px]">
+
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+      <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">{job title} {City}</span>
+
+    </div>
+
+    <!-- OTHER SERVICES -->
+    <div class="mt-[80px]">
+
+      <div class="flex items-center justify-between border-b border-white/40 pb-[12px]">
+
+        <h3 class="font-['Poppins']
+                   text-[30px]
+                   leading-[38px]
+                   font-medium">
+          Other Services
+        </h3>
+
+        <!-- Arrow Icon -->
+<svg class="w-[20px] h-[20px] opacity-90 transition-transform duration-300"
+     viewBox="0 0 24 24"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 9L12 15L18 9"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
+
+      </div>
+
+      <!-- SERVICES GRID -->
+      <div class="grid grid-cols-3 gap-y-[20px] gap-x-[60px] mt-[32px]">
+
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 1</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 2</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 3</span>
+
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 4</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 5</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 6</span>
+
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 7</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 8</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 9</span>
+
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 10</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 11</span>
+        <span class="font-['Poppins'] text-[20px] leading-[30px] font-medium">Service 12</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ 
+
+</section>
+       
+
+
+      <!-- APP DOWNLOAD SECTION -->
+<section class="bg-[#FE6807] text-white relative overflow-hidden">
+
+  <div class="max-w-[1200px] mx-auto px-6 pt-[88px] text-center">
+
+    <!-- FREE TO JOIN BADGE -->
+    <div class="inline-flex items-center justify-center
+                bg-[#191BDF]
+                text-white
+                text-[12px]
+                leading-[18px]
+                font-['Poppins']
+                font-medium
+                rounded-full
+                px-[12px]
+                py-[2px]
+                uppercase">
+      FREE TO JOIN
+    </div>
+
+    <!-- HEADING -->
+    <h2 class="mt-[24px]
+               font-['Poppins']
+               text-[48px]
+               leading-[60px]
+               font-bold
+               tracking-[-0.02em]
+               text-white">
+      Get anything done
+    </h2>
+
+    <!-- SUBTEXT -->
+    <p class="mt-[24px]
+              max-w-[748px]
+              mx-auto
+              font-['Poppins']
+              text-[20px]
+              leading-[30px]
+              font-medium
+              text-white">
+      Post any job. Set your budget. Get it done. Or, turn your spare time into
+      extra cash by joining our team of local earners.
+    </p>
+
+    <!-- DOWNLOAD TEXT -->
+    <p class="mt-[24px]
+              font-['Poppins']
+              text-[20px]
+              leading-[30px]
+              font-bold
+              text-white">
+      Click below to download on your app store
+    </p>
+
+    <!-- STORE BUTTONS -->
+    <div class="mt-[28px] flex justify-center gap-[16px] flex-wrap">
+
+      <a href="#">
+        <img src="assets/App Store.png"
+             alt="App Store"
+             class="h-[46px] w-auto hover:opacity-90 transition">
+      </a>
+
+      <a href="#">
+        <img src="assets/Google Play.png"
+             alt="Google Play"
+             class="h-[46px] w-auto hover:opacity-90 transition">
+      </a>
+
+    </div>
+
+    <!-- PHONE IMAGE -->
+    <div class="mt-[60px] flex justify-center">
+      <img src="assets/iPhone (1).png"
+           alt="App Preview"
+           class="w-full max-w-[720px] object-contain">
+    </div>
+
+  </div>
+
+</section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="bg-[#191BDF] text-white pt-14 pb-6">
+
+
+          <!-- Breadcrumb + Double Line -->
+<div class="w-full text-center mb-10">
+
+  <!-- Breadcrumb -->
+  <p class="font-['Poppins'] 
+            text-[20px] 
+            leading-[30px] 
+            font-medium 
+            text-white">
+    <a href="#" class="hover:opacity-80 transition">Home</a>
+    <span class="mx-2">&gt;</span>
+    <a href="#" class="hover:opacity-80 transition">Services</a>
+    <span class="mx-2">&gt;</span>
+    <span class="font-semibold">{Service}</span>
+  </p>
+
+  <!-- FULL WIDTH LINE (PURE WHITE) -->
+ <div class="w-full h-[1px] bg-white mt-1"></div>
+
+
+ 
+</div>
+      
+      
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+
+        
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-8 pb-8">
+      
+            <!-- Column 1 (5 cols) -->
+            <div class="lg:col-span-3">
+              <div class="flex items-center gap-2">
+                <img
+                  src="assets/logo.png"
+                  alt="Gigit logo"
+                  class="h-8 w-auto object-contain"
+                />
+              </div>
+              <p class="mt-3 max-w-[217px] text-[18px] leading-[28px] text-white">
+                Get anything done,<br>
+                right when you need it.
+              </p>
+            </div>
+      
+            <!-- Column 2 (3 cols) -->
+            <div class="lg:col-span-3">
+              <h3 class="text-[16px] font-semibold text-white">
+                About us
+              </h3>
+              <ul class="mt-4 space-y-3 text-[16px] leading-6 font-medium text-white/90">
+                <li><a href="#" class="hover:text-white">Who we are</a></li>
+                <li><a href="#" class="hover:text-white">Contact us</a></li>
+                <li><a href="#" class="hover:text-white">Become a gigit hero</a></li>
+                <li><a href="#" class="hover:text-white">Sitemap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 3 (3 cols) -->
+            <div class="lg:col-span-3">
+              <h3 class="text-sm font-bold text-white">
+                Policies
+              </h3>
+              <ul class="mt-4 space-y-3 text-[16px] leading-6 font-medium text-white/90">
+                <li><a href="#" class="hover:text-white">Terms &amp; Conditions</a></li>
+                <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white">Cancellation Policy</a></li>
+                <li><a href="#" class="hover:text-white">Community Guidelines</a></li>
+                <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 4 (5 cols) -->
+            <div class="lg:col-span-3 w-fit flex flex-col justify-betweenBG Wave.png">
+              <div class="flex flex-col gap-3">
+      
+                <!-- Google Play -->
+                <a href="#">
+                  <img
+                    src="assets/Google Play.png"
+                    class="h-[46px] w-[156px]"
+                  />
+                </a>
+      
+                <!-- App Store -->
+                <a href="#">
+                  <img
+                    src="assets/App Store.png"
+                    class="h-[46px] w-[156px]"
+                  />
+                </a>
+      
+              </div>
+      
+              <!-- Social Icons -->
+              <div class="mt-10 flex items-center gap-4 text-white text-[18px]">
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+          
+       <!-- SECOND FULL WIDTH LINE -->
+  <div class="w-full h-[1px] bg-white mt-1"></div>
+
+          <!-- Bottom -->
+          <div class="pt-6 text-center">
+            <p class="font-[Poppins] text-[14px] leading-[20px] font-medium text-white">© 2028 gigit. All rights reserved.</p>
+          </div>
+      
+        </div>
+
+      </footer>
+   
+  </body>
+</html>
+

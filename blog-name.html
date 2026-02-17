@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gigit – Blog</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#191BDF",
+            accent: "#556987",
+            dark: "#556987",
+          },
+          fontFamily: {
+            poppins: ["Poppins"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-poppins bg-white text-slate-900">
+
+<!-- CONTAINER -->
+<div class="max-w-6xl mx-auto px-4 py-12">
+
+  <!-- HERO -->
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+    <!-- Image -->
+    <img src="assets/cc3ee34f505a32d6d777c66cfe3862b428ae2b81 (2).jpg"
+      class="rounded-2xl w-full h-[360px] object-cover shadow-lg"/>
+
+    <!-- Content -->
+    <div>
+      <span class="bg-[#FE6807] text-[#fff] text-xs px-3 py-1 rounded-full font-medium">
+        Service Guides
+      </span>
+
+      <p class="text-sm text-[#FE6807] mt-3">
+        John Doe • 19 Jan 2022
+      </p>
+
+      <h1 class="text-4xl lg:text-[40px] font-bold mt-3 leading-tight text-[#1C232D]">
+        How to collaborate better with your Development team?
+      </h1>
+
+      <p class="text-[#556987] mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <!-- Author -->
+      <div class="flex items-center gap-3 mt-6">
+        <img src="assets/testimonial.png"
+          class="w-10 h-10 rounded-full"/>
+        <div>
+          <p class="font-medium">John Doe</p>
+          <p class="text-sm text-[#556987]">12 October 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN SECTION -->
+  <div class="grid lg:grid-cols-4 gap-12 mt-16">
+
+    <!-- SIDEBAR -->
+    <div class="hidden lg:block">
+      <div class="sticky top-24">
+
+        <ul class="space-y-4 text-[#556987] text-sm">
+          <li class="font-semibold text-[#556987]">Introduction</li>
+          <li class="font-semibold hover:text-primary cursor-pointer text-[#556987]">Header 1</li>
+          <li class="font-semibold hover:text-primary cursor-pointer text-[#556987]">Header 2</li>
+          <li class="font-semibold hover:text-primary cursor-pointer text-[#556987]">Summary</li>
+        </ul>
+
+        <div class="mt-8 border-t pt-4 flex items-center justify-center gap-3">
+          <button class="border px-4 py-2 rounded-md text-[12px] text-[#556987] hover:bg-gray-100 transition">
+            <i class="fa fa-copy text-[#556987] text-sm"></i>
+            Copy Link
+          </button>
+
+          <div class="flex gap-3">
+            <div class="w-8 h-8 border rounded flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+              <i class="fa-brands fa-facebook-f text-sm text-[#556987]"></i>
+            </div>
+            <div class="w-8 h-8 border rounded flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+              <i class="fa-brands fa-twitter text-sm text-[#556987]"></i>
+            </div>
+            <div class="w-8 h-8 border rounded flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+              <i class="fa-brands fa-instagram text-sm text-[#556987]"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="lg:col-span-3 space-y-8">
+
+      <p class="text-[#556987] leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non.
+        Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus.
+      </p>
+
+      <h2 class="text-2xl font-semibold">Header 1</h2>
+
+      <p class="text-[#556987]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non.
+      </p>
+
+      <!-- QUOTE -->
+      <div class="border-l-4 border-[#FE6807] pl-6 py-4 rounded">
+        <p class="text-[#333F51]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non.
+        </p>
+        <span class="text-sm text-[#556987] block mt-2">
+          — John Doe, CEO & Founder
+        </span>
+      </div>
+
+      <p class="text-[#556987]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <!-- IMAGE -->
+      <img src="assets/cc3ee34f505a32d6d777c66cfe3862b428ae2b81 (2).jpg"
+        class="rounded-xl w-full h-[320px] object-cover"/>
+
+      <p class="text-[#556987] text-sm">
+        Non massa enim vitae duis mattis.
+      </p>
+
+      <h2 class="text-2xl font-semibold">Header 2</h2>
+
+      <p class="text-[#556987]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <ol class="list-decimal pl-5 text-[#556987] space-y-2">
+        <li>Lectus id duis vitae porttitor enim gravida morbi.</li>
+        <li>Eu turpis posuere semper feugiat volutpat elit.</li>
+        <li>Suspendisse maecenas ac donec scelerisque.</li>
+      </ol>
+
+      <p class="text-[#556987]">
+        Vestibulum placerat magna nulla.
+        <span class="text-[#FE6807] font-medium">Vivamus id pharetra massa.</span>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#191BDF] text-white pt-14 pb-6">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-8">
+
+      <!-- Logo -->
+      <div>
+        <img src="assets/logo.png" class="h-8 mb-3"/>
+        <p class="text-[18px] leading-[28px]">
+          Get anything done,<br>right when you need it.
+        </p>
+      </div>
+
+      <!-- About -->
+      <div>
+        <h3 class="font-semibold">About us</h3>
+        <ul class="mt-4 space-y-3 text-white/90">
+          <li>Who we are</li>
+          <li>Contact us</li>
+          <li>Become a gigit hero</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+
+      <!-- Policies -->
+      <div>
+        <h3 class="font-semibold">Policies</h3>
+        <ul class="mt-4 space-y-3 text-white/90">
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Cancellation Policy</li>
+          <li>Community Guidelines</li>
+        </ul>
+      </div>
+
+      <!-- Apps -->
+      <div>
+        <img src="assets/Google Play.png" class="h-12 mb-3"/>
+        <img src="assets/App Store.png" class="h-12"/>
+
+        <div class="flex gap-4 mt-6">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-sm">© 2028 gigit. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

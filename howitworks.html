@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gigit – Get anything done</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#191BDF",
+              accent: "#FE6807",
+              dark: "#060733",
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(0, 0, 0, 0.08)",
+            },
+            borderRadius: {
+              pill: "9999px",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+
+  </head>
+
+  <body class="bg-white text-slate-900 antialiased font-[Poppins]">
+    <!-- Page wrapper -->
+    <div class="min-h-screen bg-white">
+      <!-- NAVBAR + HERO SECTION -->
+      <header class="bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Top navigation -->
+          <nav class="flex items-center justify-between py-5">
+            <a href="#" class="flex items-center gap-2">
+              <img
+                src="assets/logo.png"
+                alt="Gigit logo"
+                class="h-12 w-auto rounded-full bg-white/10 p-1"
+              />
+             
+            </a>
+            <div class="hidden md:flex items-center gap-10 text-[16px] font-medium text-white">
+              <a href="#how-it-works"
+                 class="relative transition font-[Poppins] duration-300 hover:text-[#FF7A00]">
+                Services
+              </a>
+            
+              <a href="#why-gigit"
+                 class="relative transition font-[Poppins] duration-300 hover:text-[#FF7A00]">
+                Who we are
+              </a>
+            
+              <a href="#become-hero"
+                 class="relative font-[Poppins] transition duration-300 hover:text-[#FF7A00]">
+                Become a Hero
+              </a>
+            </div>
+            <div class="flex items-center">
+              <button
+                class="inline-flex items-center justify-center rounded-pill bg-accent px-5 py-2 text-xs sm:text-sm font-[Poppins] font-semibold tracking-wide text-white shadow-soft hover:bg-[#ff7f2e] transition"
+              >
+                TH / EN
+              </button>
+            </div>
+          </nav>
+
+          <!-- HERO CONTENT -->
+          <!-- HERO SECTION -->
+<section id="hero" class="bg-primary text-white relative overflow-hidden pt-20 pb-32">
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid lg:grid-cols-2 items-center gap-16">
+
+      <!-- LEFT CONTENT -->
+      <div>
+
+        <!-- Badge -->
+        <div class="inline-flex items-center 
+                    bg-[#FE6807] 
+                    text-white 
+                    text-[12px] 
+                    font-medium 
+                    uppercase 
+                    px-3 py-[4px] 
+                    rounded-full">
+          WELCOME
+        </div>
+
+        <!-- Heading -->
+        <h1 class="mt-6 
+                   font-[Poppins] 
+                   font-extrabold 
+                   text-[40px] sm:text-[52px] lg:text-[60px] 
+                   leading-[48px] sm:leading-[60px] lg:leading-[72px] 
+                   tracking-[-0.02em]">
+          Post a task.<br>
+          Receive offers.<br>
+          Get the job done.
+        </h1>
+
+        <!-- Subtext -->
+        <p class="mt-6 
+                  text-[20px] 
+                  leading-[30px] 
+                  font-medium 
+                  text-white/90 
+                  max-w-[520px]">
+          gigit helps people and businesses outsource tasks
+          and jobs to make their life easier!
+        </p>
+
+      </div>
+
+      <!-- RIGHT IMAGE (ONLY YOUR COMPLETE IMAGE) -->
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="assets/catwise.png"
+          alt="Gigit App Preview"
+          class="w-full max-w-[450px]"
+        />
+      </div>
+
+    </div>
+  </div>
+
+ 
+
+</section>
+        </div>
+
+        
+      </header>
+
+      <section>
+        <img src="assets/BGWave.png" alt="BG Wave" class="w-full">
+      </section>
+
+      <main>
+        <!-- WHO WE ARE SECTION -->
+<section id="who-we-are" class="relative bg-white py-20 overflow-hidden">
+
+  <!-- TOP BLUE WAVE -->
+  <div class="absolute top-0 left-0 w-full -translate-y-full">
+    <img src="assets/BGWave.png" class="w-full" alt="">
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+
+        <!-- Badge -->
+        <div class="inline-flex items-center 
+                    bg-[#FE6807] 
+                    text-white 
+                    text-[12px] 
+                    font-medium 
+                    px-3 py-[2px] 
+                    rounded-full">
+          ABOUT US
+        </div>
+
+        <!-- Heading -->
+        <h2 class="mt-6 font-bold 
+                   text-[36px] 
+                   sm:text-[40px] 
+                   lg:text-[44px] 
+                   leading-[48px] 
+                   tracking-[-0.02em] 
+                   text-[#2A3342]">
+          Who we are
+        </h2>
+
+        <!-- Paragraphs -->
+        <div class="mt-6 space-y-6 text-[18px] leading-[28px] text-[#556987] font-medium">
+
+          <p>
+            Gigit was created around a simple belief: everyday skills should create real earning opportunities, and everyday problems should be easier to solve.
+          </p>
+
+          <p>
+            We focus on practical impact. Not just big projects — but the everyday tasks that keep homes running, businesses moving, and schedules under control.
+          </p>
+
+          <p>
+            We call the people who complete these jobs gigit heroes. They bring skills, effort, and reliability to tasks that make a real difference in someone else’s day.
+          </p>
+
+          <p>
+            Gigit exists to make local help more accessible, flexible work more available, and task-based earning more respected.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="assets/whoweare.jpg"
+          alt="Who we are"
+          class="w-full max-w-[520px] rounded-[12px] shadow-lg"
+        />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BOTTOM BLUE WAVE -->
+  <div class="absolute bottom-0 left-0 w-full translate-y-full">
+    <img src="assets/BGWave.png" class="w-full rotate-180" alt="">
+  </div>
+
+</section>
+
+        <!-- WHAT IS GIGIT (BLUE) -->
+        <section class="pt-12">
+          <img src="assets/BG Wave.png" alt="BG Wave" class="w-full">
+        </section>
+        <section
+          id="why-gigit"
+          class="bg-primary text-white py-16 sm:py-20 lg:py-24"
+        >
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              class="grid items-start gap-12 lg:gap-16 lg:grid-cols-2"
+            >
+              <!-- LEFT: Mobile image -->
+              <div class="order-2 lg:order-1 flex justify-start -ml-8 lg:-ml-56">
+                <div class="w-[420px] sm:w-[480px] lg:w-[540px] xl:w-[600px]">
+                  <img
+                    src="assets/Group 1.png"
+                    alt="Gigit mobile app"
+                    class="w-full h-auto object-contain scale-100"
+                  />
+                </div>
+              </div>
+              <!-- RIGHT: Content - top-aligned with image -->
+              <div
+                class="order-1 lg:order-2 flex flex-col items-start text-left"
+              >
+                <!-- Badge -->
+                <div
+                  class="inline-flex items-center rounded-full bg-accent px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white"
+                >
+                  MOBILE APP
+                </div>
+
+                <!-- Heading -->
+                <h2
+                  class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight"
+                >
+                  What is gigit?
+                </h2>
+
+                <!-- Description -->
+                <p
+                  class="mt-5 pt-8 max-w-xl text-base sm:text-lg leading-relaxed text-white/90"
+                >
+                  gigit is a task marketplace and digital community that securely
+                  connects people who need work done, with people who can do the
+                  work. Simple!
+                </p>
+
+                <p class="mt-7 text-base sm:text-lg font-semibold text-white/95">
+                  It’s as easy as…
+                </p>
+
+                <!-- Steps -->
+                <div class="mt-6 space-y-6 w-full">
+                  <!-- Step 1 -->
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent text-base font-semibold text-white"
+                    >
+                      1
+                    </div>
+                    <div>
+                      <h3 class="text-base sm:text-lg font-semibold text-white">
+                        Post any task
+                      </h3>
+                      <p
+                        class="mt-2 text-sm sm:text-base leading-relaxed text-white/80"
+                      >
+                        Describe your task, set your budget and due date and post
+                        to the community.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="flex items-start gap-4 pt-3">
+                    <div
+                      class="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent text-base font-semibold text-white"
+                    >
+                      2
+                    </div>
+                    <div>
+                      <h3 class="text-base sm:text-lg font-semibold text-white">
+                        Review offers
+                      </h3>
+                      <p
+                        class="mt-2 text-sm sm:text-base leading-relaxed text-white/80"
+                      >
+                        Receive offers in minutes from verified profiles with
+                        transparent ratings &amp; reviews.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="flex items-start gap-4 pt-3">
+                    <div
+                      class="mt-0.5 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-accent text-base font-semibold text-white"
+                    >
+                      3
+                    </div>
+                    <div>
+                      <h3 class="text-base sm:text-lg font-semibold text-white">
+                        Release Payment
+                      </h3>
+                      <p
+                        class="mt-2 text-sm sm:text-base leading-relaxed text-white/80"
+                      >
+                        Once you’re happy the job is complete, securely release
+                        payment through our digital escrow payment process.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </section>
+       
+
+
+       <!-- FEATURES SECTION -->
+<section class="bg-[#F7F8F9] py-24">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    
+    <!-- Badge -->
+    <div class="inline-flex items-center 
+                bg-[#FE6807] text-white 
+                text-[12px] font-medium 
+                px-3 py-[3px] rounded-full">
+      FEATURES
+    </div>
+
+    <!-- Heading -->
+    <h2 class="mt-6 text-[36px] leading-[44px] 
+               font-bold text-[#2A3342] tracking-[-0.02em]">
+      Built for Safe & Reliable Task Hiring
+    </h2>
+
+    <!-- Subtext -->
+    <p class="mt-4 text-[20px] leading-[30px] 
+              font-medium text-[#556987] max-w-2xl mx-auto">
+      Everything you need to hire and work with confidence.
+    </p>
+
+  </div>
+
+  <!-- Feature Grid -->
+  <div class="mt-24 max-w-6xl mx-auto px-6 
+              grid grid-cols-3 items-center gap-x-10">
+
+    <!-- LEFT COLUMN -->
+    <div class="space-y-24">
+
+      <!-- Feature 1 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto 
+                    flex items-center justify-center
+                    bg-[#FE6807] rounded-xl">
+          <img src="assets/icons/1.png" 
+               class="w-6 h-6" alt="">
+        </div>
+
+        <h3 class="mt-6 text-[24px] leading-[32px] 
+                   font-bold text-[#2A3342]">
+          Verified <br> Profiles
+        </h3>
+
+        <p class="mt-3 text-[16px] leading-[24px] 
+                  font-medium text-[#556987]">
+          Know who you’re hiring with verified <br>
+          accounts
+        </p>
+      </div>
+
+
+      <!-- Feature 2 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto 
+                    flex items-center justify-center
+                    bg-[#FE6807] rounded-xl">
+          <img src="assets/icons/2.png" 
+               class="w-6 h-6" alt="">
+        </div>
+
+        <h3 class="mt-6 text-[24px] leading-[32px] 
+                   font-bold text-[#2A3342]">
+          Ratings & <br> Reviews
+        </h3>
+
+        <p class="mt-3 text-[16px] leading-[24px] 
+                  font-medium text-[#556987]">
+          See real feedback before choosing a <br>
+          worker
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- CENTER PHONE -->
+    <div class="flex justify-center">
+      <img src="assets/iphoneservice.png"
+           alt="Mobile Preview"
+           class="w-[261px] h-auto" />
+    </div>
+
+
+    <!-- RIGHT COLUMN -->
+    <div class="space-y-24">
+
+      <!-- Feature 3 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto 
+                    flex items-center justify-center
+                    bg-[#FE6807] rounded-xl">
+          <img src="assets/icons/3.png" 
+               class="w-6 h-6" alt="">
+        </div>
+
+        <h3 class="mt-6 text-[24px] leading-[32px] 
+                   font-bold text-[#2A3342]">
+          Escrow <br> Payments
+        </h3>
+
+        <p class="mt-3 text-[16px] leading-[24px] 
+                  font-medium text-[#556987]">
+          No upfront risk – payment released <br>
+          after customer approval.
+        </p>
+      </div>
+
+
+      <!-- Feature 4 -->
+      <div class="text-center">
+        <div class="w-16 h-16 mx-auto 
+                    flex items-center justify-center
+                    bg-[#FE6807] rounded-xl">
+          <img src="assets/icons/4.png" 
+               class="w-6 h-6" alt="">
+        </div>
+
+        <h3 class="mt-6 text-[24px] leading-[32px] 
+                   font-bold text-[#2A3342]">
+          Set your <br> budget
+        </h3>
+
+        <p class="mt-3 text-[16px] leading-[24px] 
+                  font-medium text-[#556987]">
+          Set your own budget and compare <br>
+          offers to choose the best value
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+        <!-- APP DOWNLOAD SECTION (ORANGE) - Get anything done -->
+        <section
+          id="become-hero"
+          class="bg-[#FE6807] text-white py-12 sm:py-12 lg:py-12"
+        >
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+              <!-- Left: Content -->
+              <div>
+                <div
+                class="inline-flex items-center justify-center
+                       font-['Poppins']
+                       bg-[#191BDF]
+                       text-white
+                       text-[12px] leading-[18px]
+                       font-medium
+                       uppercase
+                       rounded-[36px]
+                       h-[22px]
+                       px-[8px]"
+              >
+                FREE TO JOIN
+              </div>
+              <h2
+              class="mt-4
+                     text-[48px]
+                     leading-[60px]
+                     font-bold
+                     tracking-[-0.02em]
+                     text-white
+                     font-['Poppins']"
+            >
+              Get anything done
+            </h2>
+            <p
+            class="mt-6
+                   text-[20px]
+                   leading-[30px]
+                   font-medium
+                   tracking-[0em]
+                   text-white
+                   font-['Poppins']
+                   max-w-[554px]"
+          >
+            Post any job. Set your budget. Get it done. Or, turn your spare time into extra cash by joining our team of local earners.
+          </p>
+          <p
+          class="mt-8
+                 text-[20px]
+                 leading-[30px]
+                 font-bold
+                 tracking-[0em]
+                 text-white
+                 font-['Poppins']"
+        >
+          Click below to download on your app store
+        </p>
+        <div class="mt-[28px] flex flex-wrap items-center gap-4">
+
+          <!-- App Store Image Button -->
+          <a href="#" class="inline-block">
+            <img 
+              src="assets/App Store.png" 
+              alt="Download on the App Store"
+              class="h-[50px] w-auto hover:opacity-90 transition"
+            />
+          </a>
+        
+          <!-- Google Play Image Button -->
+          <a href="#" class="inline-block">
+            <img 
+              src="assets/Google Play.png" 
+              alt="Get it on Google Play"
+              class="h-[50px] w-auto hover:opacity-90 transition"
+            />
+          </a>
+        
+        </div>
+              </div>
+
+              <!-- Right: Phone mockup with decorative elements -->
+              <div class="relative flex justify-center lg:justify-end min-h-[320px]">
+                <!-- Group 33 - wavy lines, top-back corner behind phone -->
+                <img
+                  src="assets/Group 33.png"
+                  alt=""
+                  class="pointer-events-none select-none absolute top-0 left-0 lg:right-6 w-32 h-32 sm:w-40 sm:h-40 opacity-90 z-0"
+                  aria-hidden="true"
+                />
+                <!-- Frame 33 (2) - blue dots, right bottom corner behind phone -->
+                <img
+                  src="assets/Frame 33 (2).png"
+                  alt=""
+                  class="pointer-events-none select-none absolute bottom-0 right-0 lg:right-0 w-40 h-40 sm:w-48 sm:h-48 opacity-90 z-0"
+                  aria-hidden="true"
+                />
+                <!-- Phone - on top -->
+                <img
+                  src="assets/iPhone (2).png"
+                  alt="Gigit app"
+                  class="relative z-10 w-full"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Wave to footer - orange fill for seamless section -->
+          <div class="mt-0">
+            <svg
+              class="block w-full -mb-[2px]"
+              viewBox="0 0 1440 80"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill="#FE6807"
+                d="M0,0 C180,16 360,32 540,48 C720,64 900,80 1080,80 C1260,80 1350,72 1440,64 L1440,80 L0,80 Z"
+              />
+            </svg>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="bg-[#191BDF] text-white pt-14 pb-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-8 pb-8">
+      
+            <!-- Column 1 (5 cols) -->
+            <div class="lg:col-span-3">
+              <div class="flex items-center gap-2">
+                <img
+                  src="assets/logo.png"
+                  alt="Gigit logo"
+                  class="h-8 w-auto object-contain"
+                />
+              </div>
+              <p class="mt-3 max-w-[217px] text-[18px] leading-[28px] text-white">
+                Get anything done,<br>
+                right when you need it.
+              </p>
+            </div>
+      
+            <!-- Column 2 (3 cols) -->
+            <div class="lg:col-span-3">
+              <h3 class="text-[16px] font-semibold text-white">
+                About us
+              </h3>
+              <ul class="mt-4 space-y-3 text-[16px] leading-6 font-medium text-white/90">
+                <li><a href="#" class="hover:text-white">Who we are</a></li>
+                <li><a href="#" class="hover:text-white">Contact us</a></li>
+                <li><a href="#" class="hover:text-white">Become a gigit hero</a></li>
+                <li><a href="#" class="hover:text-white">Sitemap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 3 (3 cols) -->
+            <div class="lg:col-span-3">
+              <h3 class="text-sm font-bold text-white">
+                Policies
+              </h3>
+              <ul class="mt-4 space-y-3 text-[16px] leading-6 font-medium text-white/90">
+                <li><a href="#" class="hover:text-white">Terms &amp; Conditions</a></li>
+                <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white">Cancellation Policy</a></li>
+                <li><a href="#" class="hover:text-white">Community Guidelines</a></li>
+                <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 4 (5 cols) -->
+            <div class="lg:col-span-3 w-fit flex flex-col justify-betweenBG Wave.png">
+              <div class="flex flex-col gap-3">
+      
+                <!-- Google Play -->
+                <a href="#">
+                  <img
+                    src="assets/Google Play.png"
+                    class="h-[46px] w-[156px]"
+                  />
+                </a>
+      
+                <!-- App Store -->
+                <a href="#">
+                  <img
+                    src="assets/App Store.png"
+                    class="h-[46px] w-[156px]"
+                  />
+                </a>
+      
+              </div>
+      
+              <!-- Social Icons -->
+              <div class="mt-10 flex items-center gap-4 text-white text-[18px]">
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="hover:opacity-80 transition">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Bottom -->
+          <div class="pt-6 text-center">
+            <p class="font-[Poppins] text-[14px] leading-[20px] font-medium text-white">© 2028 gigit. All rights reserved.</p>
+          </div>
+      
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
